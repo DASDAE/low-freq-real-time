@@ -220,6 +220,11 @@ class LFProc:
                 self._para[key] = value
         return self.parameters
 
+    def get_last_processed_time(self):
+        out_sp = dc.spool(self._output_folder).update()
+        t_last = out_sp[-1].attrs["time_max"]
+        return t_last
+
     def process_time_range(self, bgtime, edtime):
         # define the main processing flow
         def lp_process(DASdata, bgind, edind):
