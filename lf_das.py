@@ -55,7 +55,7 @@ def get_edge_effect_time(
     data = np.zeros_like(taxis)
     data[N // 2] = 1
 
-    coords = {"time": taxis, "distance": [0]}
+    coords = {"time": dc.to_datetime64(taxis), "distance": [0]}
     data = data.reshape((-1, 1))
     attrs = {"d_time": sampling_interval, "d_distance": 1}
 
