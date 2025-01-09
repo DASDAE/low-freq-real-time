@@ -7,6 +7,10 @@ Examples are available through Jupyter notebooks.
 
 Tested using DASCore v0.0.13
 
-Still under development. Use with caution.
+**Deprecation note:**
 
-Contact: Ahmad Tourei - ahmadtourei@gmail.com
+This package is deprecated and no longer maintained. All of its functionality has been integrated into DASCore. Instructions can be found under DASCore recipes linked below:
+
+[Low-Frequency Processing](https://dascore.org/recipes/low_freq_proc.html)
+
+[Real-Time Processing](https://dascore.org/recipes/real_time_proc.html)
